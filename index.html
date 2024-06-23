@@ -3,35 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Uniswap Clone</title>
+  <title>My Website with Magic Wallet</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background-color: #222;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+    .connect-wallet {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+  </style>
   <script src="https://cdn.jsdelivr.net/npm/@magic-sdk/admin@4/dist/magic-sdk.min.js"></script>
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="logo">
-        <img src="logo.png" alt="Uniswap Clone">
-      </div>
-      <ul class="nav-links">
-        <li><a href="#swap">Swap</a></li>
-        <li><a href="#pool">Pool</a></li>
-        <li><a href="#vote">Vote</a></li>
-        <li><a href="#charts">Charts</a></li>
-      </ul>
-      <button class="connect-wallet" id="connect-wallet">Connect Wallet</button>
-    </nav>
-  </header>
-  <main>
-    <section id="hero">
-      <h1>Welcome to Uniswap Clone</h1>
-      <p>The leading decentralized trading protocol</p>
-      <button>Launch App</button>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2024 Uniswap Clone. All rights reserved.</p>
-  </footer>
+  <div class="container">
+    <h1>Connect Your Wallet</h1>
+    <p>Click the button below to connect your wallet using Magic:</p>
+    <button class="connect-wallet" id="connect-wallet">Connect Wallet</button>
+  </div>
   <script src="scripts.js"></script>
 </body>
 </html>
